@@ -9,11 +9,13 @@ fn main() {
     let stdin = io::stdin();
     for line in stdin.lock().lines() {
         let l = line.unwrap();
-        if counter.contains_key(&l) {
-            *counter.get_mut(&l).unwrap() += 1;
-        } else {
-            counter.insert(l, 1);
-        }
+        match counter.get_mut(&l) {
+            Some(value) => *value += 1,
+            None => {
+                counter.insert(l, 1);
+                ()
+            }
+        };
     }
 
     for (key, value) in counter.iter() {
