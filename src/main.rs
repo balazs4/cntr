@@ -6,8 +6,7 @@ use std::{
 fn main() {
     let mut counter: HashMap<String, i32> = HashMap::new();
 
-    let stdin = io::stdin();
-    for line in stdin.lock().lines() {
+    for line in io::stdin().lock().lines() {
         let text = line.unwrap();
         if let Some(count) = counter.get_mut(&text) {
             *count += 1;
