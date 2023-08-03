@@ -19,11 +19,3 @@ EOF
 2       foo
 1       bar
 ```
-
-## author
-
-balazs4
-
-## license
-
-MIT
