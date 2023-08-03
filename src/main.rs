@@ -16,7 +16,7 @@ fn main() {
         counter.insert(text, 1);
     }
 
-    for (key, value) in counter.iter() {
-        println!("{}\t{}", key, value);
+    for (line, count) in counter.iter() {
+        println!("{}\t{}", count, line);
     }
 }
