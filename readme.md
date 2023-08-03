@@ -4,8 +4,12 @@
 
 ## usage
 
+```
+rustc cntr.rs
+```
+
 ```sh
-cat << EOF | cargo run --quiet
+cat << EOF | ./cntr
 foo
 bar
 foo
