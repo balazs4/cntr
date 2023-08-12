@@ -1,6 +1,6 @@
 # cntr
 
-> counts unique lines reading from stdin
+> counts occurence of unique lines reading from stdin
 
 ## usage
 
