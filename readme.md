@@ -5,7 +5,7 @@
 ## usage
 
 ```
-rustc cntr.rs
+rustc --crate-type=bin --crate-name=cntr main.rs
 ```
 
 ```sh
